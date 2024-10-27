@@ -1,0 +1,52 @@
+#heading{
+    color: orange;
+}
+.second-text{
+    position: relative;
+}
+.second-text::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-left: 5px solid blue;
+    animation: typing 3.5s steps(10) infinite;
+}
+@keyframes typing {
+    40%,60%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+    
+}
+li{
+    list-style: none;
+}
+.box{
+    position: relative;
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+}
+.nav{
+    background-color: purple;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+.ul-container{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
